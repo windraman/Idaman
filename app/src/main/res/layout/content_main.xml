@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefresh"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <banjarbarukota.go.id.idaman.Utility.ResponsiveScrollView
+            android:id="@+id/svWebView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/nonVideoLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <banjarbarukota.go.id.idaman.Utility.VideoEnabledWebView
+                    android:id="@+id/myWebView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+            </RelativeLayout>
+
+        </banjarbarukota.go.id.idaman.Utility.ResponsiveScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/videoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </RelativeLayout>
+</RelativeLayout>

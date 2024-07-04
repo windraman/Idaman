@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    tools:context="yv.jot.activities.LocationDetailsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="@color/clear_btn_color"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+
+                android:layout_height="237dp"
+                android:background="@mipmap/bg"
+                android:visibility="visible"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.7">
+
+            </androidx.viewpager.widget.ViewPager>
+
+            <TextView
+                android:id="@+id/tvNamaTempat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="25dp"
+                android:text="Like LuaPass?\nBuy me a coffee :)"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_collapseMode="parallax" />
+
+            <TextView
+                android:id="@+id/tvTags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="15dp"
+                android:text="tags"
+                android:textColor="@color/emoji_icons"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_collapseMode="parallax" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tool_bar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:textColor="@android:color/white"
+                android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+                app:layout_collapseMode="pin">
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <include layout="@layout/activity_tempat_detail" />
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

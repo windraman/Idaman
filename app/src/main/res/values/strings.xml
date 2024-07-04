@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">idaman</string>
+    <string name="server_client_id">404650429731-rtohufla6op0nbab13369gbtk8vak8g8.apps.googleusercontent.com</string>
+    <string name="selamat">Login Sukses\n Password Untuk @free.banjarbaru adalah :
+        \n\n
+        -banjarbaruberinovasi-\n\n
+        Selamat Berselancar Di Banjarbaru Bersama\n
+        IDAMAN\n
+        (Internet Dalam Genggaman)</string>
+    <string name="fgmt_titre_drawer">YourText</string>
+
+    <string name="action_refresh">Refresh</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="action_cari">Cari</string>
+
+    <string name="title_activity_fs_img">FsImgActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_step_register">StepRegisterActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="next">LANJUT</string>
+    <string name="skip">LEWATI</string>
+    <string name="start">SELESAI</string>
+    <string name="title_activity_main_depan">MainDepanActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="msg_location_service_started">Location Service Started</string>
+    <string name="no_google_playservice_available">No Google Play Sevice Available</string>
+    <string name="title_alert_no_internet">No Internet</string>
+    <string name="msg_title_alert_no_internet">No Internet Connection</string>
+
+
+    no_google_playservice_available
+    <integer-array name="img_id_arr">
+        <item>@drawable/ic_idaman_icon</item>
+        <item>@drawable/ic_idaman_icon</item>
+        <item>@drawable/ic_idaman_icon</item>
+        <item>@drawable/ic_idaman_icon</item>
+        <item>@drawable/ic_idaman_icon</item>
+    </integer-array>
+
+    <string name="basalid">0987654321</string>
+    <string name="satu_login">SATU LOGIN BANJARBARU</string>
+    <string name="title_alert_no_intenet">No Internet</string>
+    <string name="msg_alert_no_internet">Internet Not Connected</string>
+    <string name="btn_label_refresh">Refresh</string>
+    <string name="permission_rationale">Permission Ratonale</string>
+    <string name="permission_denied_explanation">Caused</string>
+    <string name="settings">Settings</string>
+
+    <string name="startstream">Start/Stop Streaming</string>
+    <string name="flash">Flash</string>
+    <string name="camera">Camera</string>
+    <string name="video">Video Settings</string>
+    <string name="save">OK</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="uri">URI</string>
+    <string name="password_hint">Leave empty if not needed</string>
+    <string name="username_hint">Leave empty if not needed</string>
+    <string name="default_bitrate">0 kbps</string>
+    <string name="default_stream">rtmp://103.133.56.188:1935/idaman/1234567890?token=t3hkotak</string>
+
+    <string name="rtsp_streamer">Custom RTSP</string>
+    <string name="rtmp_streamer">Custom RTMP</string>
+    <string name="default_rtmp">Default RTMP</string>
+    <string name="default_rtsp">Default RTSP</string>
+    <string name="from_file_rtsp">From file RTSP</string>
+    <string name="from_file_rtmp">From file RTMP</string>
+    <string name="surface_mode_rtsp">Surface mode RTSP</string>
+    <string name="surface_mode_rtmp">Surface mode RTMP</string>
+    <string name="texture_mode_rtsp">Texture mode RTSP</string>
+    <string name="texture_mode_rtmp">Texture mode RTMP</string>
+    <string name="display_rtmp">Display RTMP</string>
+    <string name="display_rtsp">Display RTSP</string>
+    <string name="opengl_rtmp">OpenGl RTMP</string>
+    <string name="opengl_rtsp">OpenGl RTSP</string>
+    <string name="service_rtp">Service RTP</string>
+    <string name="cube_test_rtmp">Cube test RTMP</string>
+
+    <string name="tv_select">Select your streamer</string>
+    <string name="hint_rtsp">rtsp://yourendpoint</string>
+    <string name="hint_rtmp">rtmp://yourendpoint</string>
+    <string name="start_button">Stream</string>
+    <string name="stop_button">Stop</string>
+    <string name="switch_camera_button">Putar camera</string>
+    <string name="select_file">Select file</string>
+    <string name="start_record">Rekam</string>
+    <string name="stop_record">Stop</string>
+    <string name="resync_file">ReSync file</string>
+    <!--menu-->
+    <string name="microphone">Microphone</string>
+    <string name="filters">Filters</string>
+    <string name="clear">Clear</string>
+    <string name="grey_scale">Grey scale</string>
+    <string name="negative">Negative</string>
+    <string name="sepia">Sepia</string>
+    <string name="aqua">Aqua</string>
+    <string name="posterize">Posterize</string>
+    <!--gl menu-->
+    <string name="enable_disable_fxaa">enable/disable FXAA</string>
+    <!--filters-->
+    <string name="no_filter">No filter</string>
+    <string name="analog_tv">Analog TV</string>
+    <string name="android_view">Android view</string>
+    <string name="basic_deformation">Basic deformation</string>
+    <string name="beauty">Beauty</string>
+    <string name="black">Black</string>
+    <string name="blur">Blur</string>
+    <string name="brightness">Brightness</string>
+    <string name="cartoon">Cartoon</string>
+    <string name="circle">Circle</string>
+    <string name="color">Color</string>
+    <string name="contrast">Contrast</string>
+    <string name="duotone">Duotone</string>
+    <string name="earlybird">EarlyBird</string>
+    <string name="edge_detection">Edge detection</string>
+    <string name="exposure">Exposure</string>
+    <string name="fire">Fire</string>
+    <string name="gamma">Gamma</string>
+    <string name="glitch">Glitch</string>
+    <string name="gif">Gif</string>
+    <string name="halftone_lines">Halftone lines</string>
+    <string name="image">Image</string>
+    <string name="image_70s">Image 70s</string>
+    <string name="lamoish">Lamoish</string>
+    <string name="money">Money</string>
+    <string name="pixelated">Pixelated</string>
+    <string name="polygonization">Polygonization</string>
+    <string name="rgb_saturate">RGB saturate</string>
+    <string name="ripple">Ripple</string>
+    <string name="rotation">Rotation</string>
+    <string name="saturation">Saturation</string>
+    <string name="surface_filter">Surface filter</string>
+    <string name="rainbow">Rainbow</string>
+    <string name="sharpness">Sharpness</string>
+    <string name="snow">Snow</string>
+    <string name="swirl">Swirl</string>
+    <string name="temperature">Temperature</string>
+    <string name="text">Text</string>
+    <string name="zebra">Zebra</string>
+    <!--drawer-->
+    <string name="drawer_title">Options</string>
+    <string name="protocols">Protocol</string>
+    <string name="tcp">TCP</string>
+    <string name="udp">UDP</string>
+    <string name="audio">Audio</string>
+    <string name="resolution">Resolution</string>
+    <string name="video_bitrate">Bitrate (on fly)</string>
+    <string name="audio_bitrate">Bitrate</string>
+    <string name="fps">FPS</string>
+    <string name="orientation">Orientation</string>
+    <string name="hardware_rotation">Hardware rotation</string>
+    <string name="samplerate">SampleRate</string>
+    <string name="channel">Channel</string>
+    <string name="stereo">Stereo</string>
+    <string name="mono">Mono</string>
+    <string name="echo_canceler">Echo canceler</string>
+    <string name="wowza_auth">Wowza Auth</string>
+    <string name="wowza_user">User</string>
+    <string name="wowza_password">Password</string>
+    <string name="noise_suppressor">Noise suppressor</string>
+    <string name="mulai_vicon">Batamuan</string>
+
+    <string name="upload">Selesai</string>
+    <string name="cancel">Batal</string>
+    <string name="select_video_text">Pilih 1 menit video</string>
+    <string name="video_length_validation">Video minimum 3 detik</string>
+
+</resources>

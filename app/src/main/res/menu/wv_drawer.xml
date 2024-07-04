@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+
+    </group>
+    <item android:title="Sering Dicari">
+        <menu>
+            <item
+                android:id="@+id/nav_tambal"
+                android:icon="@drawable/ic_report_black_24dp"
+                android:title="Tambal Ban" />
+            <item
+                android:id="@+id/nav_bengkel"
+                android:icon="@drawable/ic_new_releases_black_24dp"
+                android:title="Bengkel" />
+            <item
+                android:id="@+id/nav_paman_pentol"
+                android:icon="@drawable/ic_scan_black_24dp"
+                android:title="Paman Pentol" />
+            <item
+                android:id="@+id/nav_atm"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="ATM" />
+            <item
+                android:id="@+id/nav_pom_bensin"
+                android:icon="@drawable/ic_key_black_24dp"
+                android:title="Pom Bensin" />
+        </menu>
+    </item>
+    <item android:title="Kategori">
+        <menu>
+            <item
+                android:id="@+id/nav_sms_lapor"
+                android:icon="@drawable/ic_report_black_24dp"
+                android:title="Kuliner" />
+            <item
+                android:id="@+id/nav_list_bbuzz"
+                android:icon="@drawable/ic_new_releases_black_24dp"
+                android:title="Wisata" />
+            <item
+                android:id="@+id/nav_scan"
+                android:icon="@drawable/ic_scan_black_24dp"
+                android:title="Bengkel" />
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="ATM" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_key_black_24dp"
+                android:title="Pentol" />
+        </menu>
+    </item>
+
+</menu>

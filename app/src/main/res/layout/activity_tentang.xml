@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="204dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/ic_idaman_logo" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Satu Aplikasi Untuk Banjarbaru. Persembahan Dari Pemerintah Kota Banjarbaru." />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Didedikasikan Untuk Alm. Johan Arifin AP, MM. Terimakasih Atas Pengabdiannya Terhadap Pemerintah dan Masyarakat Kota Banjarbaru." />
+</LinearLayout>

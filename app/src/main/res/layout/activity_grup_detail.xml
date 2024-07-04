@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TVAnggota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:text="Partisipan :"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvAnggota"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" >
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/btnGabung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:text="BERGABUNG" />
+
+            <TextView
+                android:id="@+id/TVDeskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:text="Deskripsi :"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/TVDeskripsiGrup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:singleLine="false"
+                android:text="Deskripsi Grup" />
+
+            <TextView
+                android:id="@+id/TVDibuat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:text="Dibuat Tanggal :"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TVDibuatGrup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:text="Tanggal dibuat" />
+
+            <TextView
+                android:id="@+id/TVJenis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:text="Jenis :"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TVJenisGrup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:text="Umum/Tertutup" />
+
+            <TextView
+                android:id="@+id/tvKomentar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Komentar Terakhir :"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/list_member"
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:visibility="gone">
+
+            </ListView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

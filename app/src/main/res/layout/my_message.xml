@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:clipToPadding="false"
+    android:paddingVertical="10dp"
+    android:paddingLeft="60dp"
+    android:paddingRight="15dp">
+
+    <LinearLayout
+        android:id="@+id/msg_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/my_message"
+        android:baselineAligned="false"
+        android:foregroundGravity="right"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/chatVideoLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:visibility="gone">
+
+            <VideoView
+                android:id="@+id/chatVideoView"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/imbPlay"
+                android:layout_width="81dp"
+                android:layout_height="59dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/chatVideoView"
+                app:layout_constraintStart_toStartOf="@+id/chatVideoView"
+                app:layout_constraintTop_toTopOf="@+id/chatVideoView"
+                app:srcCompat="@drawable/ic_white_play" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imgChat"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            tools:srcCompat="@tools:sample/backgrounds/scenic[2]" />
+
+        <com.vanniktech.emoji.EmojiTextView
+            android:id="@+id/message_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="right"
+            android:elevation="2dp"
+            android:minWidth="100dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
+            android:text="How are you doing? This is a long message that should probably wrap."
+            android:textAlignment="textEnd"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tvMessageDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="yesterday, 12:00"
+            android:textAlignment="textStart"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:paddingVertical="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="60dp">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/msg_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <LinearLayout
+        android:id="@+id/msg_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/their_message"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/profile_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:paddingBottom="4dp"
+            android:text="Rose"
+            android:textSize="8sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/chatVideoLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:visibility="gone">
+
+            <VideoView
+                android:id="@+id/chatVideoView"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/imbPlay"
+                android:layout_width="81dp"
+                android:layout_height="59dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/chatVideoView"
+                app:layout_constraintStart_toStartOf="@+id/chatVideoView"
+                app:layout_constraintTop_toTopOf="@+id/chatVideoView"
+                app:srcCompat="@drawable/ic_white_play" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imgChat"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            tools:srcCompat="@tools:sample/backgrounds/scenic[2]" />
+
+        <com.vanniktech.emoji.EmojiTextView
+            android:id="@+id/message_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:elevation="2dp"
+            android:minWidth="100dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
+            android:text="How are you doing? This is a long message that should probably wrap."
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tvMessageDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="yesterday, 12:00"
+            android:textAlignment="textEnd"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imbMessageLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/msg_container"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_thumb" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvUsersLiked"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:scrollbars="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imbMessageLike"
+        app:layout_constraintTop_toBottomOf="@+id/msg_container"
+        app:layout_constraintVertical_bias="0.384" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

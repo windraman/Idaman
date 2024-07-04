@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tags" />
+
+        <banjarbarukota.go.id.idaman.Utility.MultiSelectionSpinner
+            android:id="@+id/multiSpinTags"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Lokasi" />
+
+        <EditText
+            android:id="@+id/edtNamaLokasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jalan" />
+
+        <EditText
+            android:id="@+id/edtJalan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nomor" />
+
+        <EditText
+            android:id="@+id/edtNomor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kota/Kabupaten" />
+
+        <Spinner
+            android:id="@+id/spinnerKota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kecamatan" />
+
+        <Spinner
+            android:id="@+id/spinnerKecamatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kelurahan" />
+
+        <Spinner
+            android:id="@+id/spinnerKelurahan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kode Pos" />
+
+        <EditText
+            android:id="@+id/edtKodePos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number|textPostalAddress" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telepon" />
+
+        <EditText
+            android:id="@+id/edtTelepon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number|textPhonetic"
+            android:phoneNumber="true" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Website" />
+
+        <EditText
+            android:id="@+id/edtWebsite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textWebEditText" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Default Icon" />
+
+        <Spinner
+            android:id="@+id/spinnerDefaultIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgIconf2"
+                android:layout_width="190dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/potrait_blank" />
+
+            <ImageButton
+                android:id="@+id/imbPilihIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_folder_open_black_24dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi" />
+
+
+        <EditText
+            android:id="@+id/edtDeskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
+
+    </LinearLayout>
+</ScrollView>

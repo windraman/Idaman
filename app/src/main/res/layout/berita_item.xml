@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvIdBerita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="8sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/userRibbon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:gravity="left"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIdBerita">
+
+        <ImageView
+            android:id="@+id/imgUserRibbon"
+            android:layout_width="56dp"
+            android:layout_height="48dp"
+            android:layout_margin="5dp"
+            android:textAlignment="viewStart"
+            tools:srcCompat="@tools:sample/avatars[0]" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="9"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvUsernameRibbon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textAlignment="viewStart"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvStatusRibbon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="status"
+                android:textAlignment="viewStart" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imbMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            app:srcCompat="@drawable/ic_more_vert_black_24dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvIsiBerita"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:maxLines="10"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userRibbon" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vpGambarBerita"
+        android:layout_width="0dp"
+        android:layout_height="252dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIsiBerita">
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/SliderDots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/vpGambarBerita">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reaksiLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SliderDots">
+
+        <ImageButton
+            android:id="@+id/imbLike"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="3"
+            android:background="@color/transparent"
+            app:srcCompat="@drawable/ic_thumb" />
+
+        <ImageButton
+            android:id="@+id/imbKomentar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            app:srcCompat="@drawable/ic_chat_bubble_outline_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/imbShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            app:srcCompat="@android:drawable/ic_menu_share" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sukaLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reaksiLayout">
+
+        <TextView
+            android:id="@+id/tvSuka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSukaCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="suka"
+            android:textSize="10dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tvJKomen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvKomenCaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="komentar"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/messages_view"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sukaLayout"
+        app:layout_constraintVertical_bias="0.035" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

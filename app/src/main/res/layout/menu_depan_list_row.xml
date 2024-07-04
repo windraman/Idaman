@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvIdMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="0" />
+
+    <ImageView
+        android:id="@+id/imgBatch"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="top|left|center_vertical"
+        android:translationZ="10dp"
+        app:srcCompat="@drawable/potrait_blank" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:translationZ="9dp">
+
+        <ImageView
+            android:id="@+id/imgIconMenu"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            app:srcCompat="@drawable/circle" />
+
+        <TextView
+            android:id="@+id/tvNamaMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="Nama"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_color">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lVideoItem"
+        android:layout_width="411dp"
+        android:layout_height="250dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <VideoView
+            android:id="@+id/videoItem"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imbPlayItem"
+            android:layout_width="80dp"
+            android:layout_height="61dp"
+            android:background="@color/color_gray_alpha"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="@+id/videoItem"
+            app:layout_constraintEnd_toEndOf="@+id/videoItem"
+            app:layout_constraintStart_toStartOf="@+id/videoItem"
+            app:layout_constraintTop_toTopOf="@+id/videoItem"
+            app:srcCompat="@drawable/ic_white_play" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <WebView
+        android:id="@+id/wvItem"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imgItem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgItem"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lVideoItem"
+        app:srcCompat="@mipmap/bg" />
+</androidx.constraintlayout.widget.ConstraintLayout>

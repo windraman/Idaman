@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+
+    </group>
+    <item android:title="Tools">
+        <menu>
+<!--            <item-->
+<!--                android:id="@+id/nav_sms_lapor"-->
+<!--                android:icon="@drawable/ic_report_black_24dp"-->
+<!--                android:title="Lapor Cepat" />-->
+            <item
+                android:id="@+id/nav_list_chat"
+                android:icon="@drawable/ic_send_black_24dp"
+                android:title="Chat" />
+            <item
+                android:id="@+id/nav_list_bbuzz"
+                android:icon="@drawable/ic_new_releases_black_24dp"
+                android:title="B Buzz" />
+
+<!--            <item-->
+<!--                android:id="@+id/nav_live"-->
+<!--                android:icon="@drawable/ic_camera_front_black_24dp"-->
+<!--                android:title="Siaran Langsung" />-->
+
+            <item
+                android:id="@+id/nav_scan"
+                android:icon="@drawable/ic_scan_black_24dp"
+                android:title="Scan QR Code" />
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="Pengaturan" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_key_black_24dp"
+                android:title="Logout" />
+        </menu>
+    </item>
+    <item android:title="Others">
+        <menu>
+            <item
+                android:id="@+id/nav_About"
+                android:icon="@drawable/ic_perm_device_information_black_24dp"
+                android:title="Tentang" />
+        </menu>
+    </item>
+
+</menu>

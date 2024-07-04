@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">banjarbarukota.go.id</domain>
+        <domain includeSubdomains="true">syamsudinnoor-airport.co.id</domain>
+        <domain includeSubdomains="true">lapor.go.id</domain>
+        <domain includeSubdomains="true">googleapis.com</domain>
+        <domain includeSubdomains="true">cloudflare.com</domain>
+        <domain includeSubdomains="true">osm.org</domain>
+        <domain includeSubdomains="true">mapquest.com</domain>
+        <domain includeSubdomains="true">openstreetmap.org</domain>
+        <domain includeSubdomains="true">wahyu.top</domain>
+    </domain-config>
+</network-security-config>

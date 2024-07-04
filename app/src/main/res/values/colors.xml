@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#02b8e6</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorKanwil">#b40000</color>
+    <color name="colorAP2B">#8c17ff</color>
+    <color name="colorAPD">#B0F7C2</color>
+    <color name="colorUPPKKalsel">#54DEBA</color>
+    <color name="colorUPPKKalteng">#473fe1</color>
+    <color name="colorBJM">#2617ff</color>
+    <color name="colorBRB">#2ea3de</color>
+    <color name="colorKTB">#2eeb00</color>
+    <color name="colorKapuas">#C2B80D</color>
+    <color name="colorPLG">#abcfd9</color>
+    <color name="colorAsam">#1f73ff</color>
+    <color name="colorBarito">#318e6a</color>
+    <color name="colorKuningPLN">#F9EF27</color>
+    <color name="colorBiruPLN">#FF4081</color>
+    <color name="colorMerahPLN">#d1040c</color>
+    <color name="white">#ffffff</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="dot_dark_screen1">#D1395C</color>
+    <color name="dot_dark_screen2">#ff14a895</color>
+    <color name="dot_dark_screen3">#2278D4</color>
+    <color name="dot_dark_screen4">#ffa854d4</color>
+    <color name="dot_light_screen1">#fff98da5</color>
+    <color name="dot_light_screen2">#8CF9EB</color>
+    <color name="dot_light_screen3">#93C6FD</color>
+    <color name="dot_light_screen4">#E4B5FC</color>
+
+    <color name="startblue">#2ea3de</color>
+    <color name="endblue">#E4B5FC</color>
+    <color name="graylight">#8CF9EB</color>
+
+    <color name="appColor">#e74c3c</color>
+
+    <color name="text_color">#000000</color>
+    <color name="seekbar_color">#3be3e3</color>
+    <color name="line_color">#FF15FF00</color>
+    <color name="shadow_color">#00000000</color>
+
+    <color name="color_gray_alpha">#65b7b7b7</color>
+    <color name="app_blue">#0e1f2f</color>
+</resources>

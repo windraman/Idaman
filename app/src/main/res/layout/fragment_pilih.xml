@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTanya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:paddingTop="10dp"
+        android:text="Yang mana nama anda :"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="52dp" />
+
+    <ListView
+        android:id="@+id/lvItems"
+        android:layout_width="match_parent"
+        android:layout_height="479dp"
+        android:layout_marginTop="15dp">
+
+    </ListView>
+
+</LinearLayout>

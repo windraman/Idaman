@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<account-authenticator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accountType="banjarbarukota.go.id.idaman"
+    android:icon="@drawable/ic_idaman_icon"
+    android:smallIcon="@drawable/ic_idaman_icon"
+    android:label="@string/satu_login"/>
